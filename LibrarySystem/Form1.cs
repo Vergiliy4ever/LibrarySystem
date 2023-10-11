@@ -29,6 +29,7 @@ namespace LibrarySystem
         private void AdminButton_Click(object sender, EventArgs e)
         {
             Library f2 = new Library();
+            f2.Admin();
             f2.Show();
             this.Hide();
             

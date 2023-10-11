@@ -87,6 +87,7 @@
             this.booksListBox.Name = "booksListBox";
             this.booksListBox.Size = new System.Drawing.Size(620, 564);
             this.booksListBox.TabIndex = 4;
+            this.booksListBox.SelectedIndexChanged += new System.EventHandler(this.booksListBox_SelectedIndexChanged);
             // 
             // addBookButton
             // 
@@ -98,6 +99,7 @@
             this.addBookButton.Text = "Добавить";
             this.addBookButton.UseVisualStyleBackColor = true;
             this.addBookButton.Visible = false;
+            this.addBookButton.Click += new System.EventHandler(this.addBookButton_Click);
             // 
             // bookNameLabel
             // 
@@ -135,13 +137,14 @@
             // deleteBookButton
             // 
             this.deleteBookButton.Enabled = false;
-            this.deleteBookButton.Location = new System.Drawing.Point(1131, 382);
+            this.deleteBookButton.Location = new System.Drawing.Point(1131, 381);
             this.deleteBookButton.Name = "deleteBookButton";
             this.deleteBookButton.Size = new System.Drawing.Size(94, 29);
             this.deleteBookButton.TabIndex = 12;
             this.deleteBookButton.Text = "Удалить";
             this.deleteBookButton.UseVisualStyleBackColor = true;
             this.deleteBookButton.Visible = false;
+            this.deleteBookButton.Click += new System.EventHandler(this.deleteBookButton_Click);
             // 
             // Library
             // 
